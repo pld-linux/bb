@@ -2,7 +2,7 @@ Summary:	BB - the portable demo
 Summary(pl):	BB - przeno¶ne demo
 Name:		bb
 Version:	1.3rc1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Terminal
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/aa-project/%{name}-%{version}.tar.gz
@@ -28,7 +28,7 @@ operacyjnych.
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
@@ -39,13 +39,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS ChangeLog NEWS README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/bb
 %{_mandir}/man1/*
