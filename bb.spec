@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		Applications/Terminal
 Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
+# Source0-md5:	1ae5b742fbe654ba51c31832cf7e81fd
 URL:		http://aa-project.sourceforge.net/bb/
 BuildRequires:	autoconf
 BuildRequires:	automake
