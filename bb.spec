@@ -27,7 +27,7 @@ operacyjnych.
 %setup -q -n %{name}-1.3.0
 
 %build
-%configure
+%configure2_13
 %{__make}
 
 %install
