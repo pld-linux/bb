@@ -7,11 +7,11 @@ License:	GPL
 Group:		Applications/Terminal
 Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
 # Source0-md5:	1ae5b742fbe654ba51c31832cf7e81fd
-URL:		http://aa-project.sourceforge.net/bb/
 Patch0:		%{name}-typos.patch
+URL:		http://aa-project.sourceforge.net/bb/
+BuildRequires:	aalib-devel >= 1.4
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	aalib-devel >= 1.4
 BuildRequires:	libmikmod-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,7 +40,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
