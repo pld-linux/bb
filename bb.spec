@@ -5,7 +5,7 @@ Version:	1.3rc1
 Release:	3
 License:	GPL
 Group:		Applications/Terminal
-Source0:	ftp://download.sourceforge.net/pub/sourceforge/aa-project/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
 URL:		http://aa-project.sourceforge.net/bb/
 BuildRequires:	autoconf
 BuildRequires:	automake
