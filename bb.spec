@@ -2,21 +2,23 @@ Summary:	BB - the portable demo
 Summary(pl):	BB - przeno¶ne demo
 Name:		bb
 Version:	1.3rc1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Terminal
 Group(de):	Applikationen/Terminal
 Group(pl):	Aplikacje/Terminal
 Source0:	ftp://download.sourceforge.net/pub/sourceforge/aa-project/%{name}-%{version}.tar.gz
 URL:		http://aa-project.sourceforge.net/bb/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	aalib-devel >= 1.4
 BuildRequires:	libmikmod-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 BB is an high quality audio-visual demonstration for your text
-terminal. It is portable demo, so you can run it on plenty of operating
-systems.
+terminal. It is portable demo, so you can run it on plenty of
+operating systems.
 
 %description -l pl
 BB jest wysokiej jako¶ci demem z grafik± i d¼wiêkiem, dzia³aj±cym na
@@ -27,7 +29,11 @@ operacyjnych.
 %setup -q -n %{name}-1.3.0
 
 %build
-%configure2_13
+rm -f missing
+aclocal
+autoconf
+automake -a -c
+%configure
 %{__make}
 
 %install
