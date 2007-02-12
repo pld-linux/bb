@@ -1,5 +1,5 @@
 Summary:	BB - the portable demo
-Summary(pl.UTF-8):   BB - przenośne demo
+Summary(pl.UTF-8):	BB - przenośne demo
 Name:		bb
 Version:	1.3rc1
 Release:	6
