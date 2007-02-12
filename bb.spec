@@ -1,5 +1,5 @@
 Summary:	BB - the portable demo
-Summary(pl):	BB - przeno∂ne demo
+Summary(pl.UTF-8):   BB - przeno≈õne demo
 Name:		bb
 Version:	1.3rc1
 Release:	6
@@ -20,9 +20,9 @@ BB is an high quality audio-visual demonstration for your text
 terminal. It is portable demo, so you can run it on plenty of
 operating systems.
 
-%description -l pl
-BB jest wysokiej jako∂ci demem z grafik± i dºwiÍkiem, dzia≥aj±cym na
-terminalu tekstowym. Jest przeno∂ne - dzia≥a na wielu systemach
+%description -l pl.UTF-8
+BB jest wysokiej jako≈õci demem z grafikƒÖ i d≈∫wiƒôkiem, dzia≈ÇajƒÖcym na
+terminalu tekstowym. Jest przeno≈õne - dzia≈Ça na wielu systemach
 operacyjnych.
 
 %prep
