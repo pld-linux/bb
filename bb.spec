@@ -2,7 +2,7 @@ Summary:	BB - the portable demo
 Summary(pl.UTF-8):	BB - przenośne demo
 Name:		bb
 Version:	1.3rc1
-Release:	7
+Release:	8
 License:	GPL
 Group:		Applications/Terminal
 Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
