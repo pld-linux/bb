@@ -1,0 +1,11 @@
+--- bb-1.3rc1.orig/tex.c
++++ bb-1.3rc1/tex.c
+@@ -92,7 +92,7 @@
+ 
+ static inline void clear_zbuff()
+ {
+-    memset(zbuff, 0x55, (X_s * Y_s * sizeof(long)));
++    memset(zbuff, 0x55, (X_s * Y_s * sizeof(int)));
+ }
+ 
+ 
