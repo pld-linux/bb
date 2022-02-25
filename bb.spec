@@ -2,7 +2,7 @@ Summary:	BB - the portable demo
 Summary(pl.UTF-8):	BB - przenośne demo
 Name:		bb
 Version:	1.3rc1
-Release:	10
+Release:	11
 License:	GPL
 Group:		Applications/Terminal
 Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
@@ -10,7 +10,7 @@ Source0:	http://dl.sourceforge.net/aa-project/%{name}-%{version}.tar.gz
 Patch0:		%{name}-typos.patch
 Patch1:		%{name}-regparm.patch
 Patch2:		segv64.patch
-Patch3:		pulse.patch
+Patch3:		bb-1.3.0_rc1-disable-pulse.patch
 URL:		http://aa-project.sourceforge.net/bb/
 BuildRequires:	aalib-devel >= 1.4
 BuildRequires:	autoconf
